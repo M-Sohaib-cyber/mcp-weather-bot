@@ -6,7 +6,7 @@ const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Replace with your real API key later
+
 const API_KEY = process.env.API_KEY;
 
 app.get("/weather/:city", async (req, res) => {
