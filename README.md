@@ -17,6 +17,15 @@ Supports **current weather** and a **3-day forecast**. Secure API key management
 - 📦 Easy setup and usage  
 
 ---
+
+## 🛠️ Tech Stack
+- Node.js
+- Express.js
+- WeatherAPI.com
+- dotenv (for secure environment variables)
+
+---
+
 ## 📂 Project Structure
 ```
 mcp-weather-bot/
@@ -31,9 +40,9 @@ mcp-weather-bot/
 
 ## ⚙️ Setup Instructions
 
-### 1) Prerequisites
+## 1) Prerequisites
 - Install **Node.js (LTS)**: [https://nodejs.org](https://nodejs.org)  
-- Verify installation:
+### Verify installation:
 ```
   node -v
   npm -v
@@ -64,8 +73,7 @@ npm install --save-dev nodemon
 ```
 3) Add your API key
 
-Sign up at WeatherAPI https://www.weatherapi.com/
- (free).
+Sign up at [WeatherAPI](https://www.weatherapi.com/) (free).
 
 Create a .env file in the project root and add your key:
 
