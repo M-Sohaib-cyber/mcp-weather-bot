@@ -100,6 +100,16 @@ http://localhost:3000/weather/London
 
 http://localhost:3000/forecast/London
 
+
+## 🔒 Security Notes
+
+Never commit your .env file (your API key).
+
+Your GitHub repo already has .gitignore with .env, so you’re safe.
+
+Anyone using this project must generate their own API key.
+
+
 📸 Example Output
 
 Current weather
@@ -123,13 +133,7 @@ Current weather
   ]
 }
 ```
-## 🔒 Security Notes
 
-Never commit your .env file (your API key).
-
-Your GitHub repo already has .gitignore with .env, so you’re safe.
-
-Anyone using this project must generate their own API key.
 
 👨‍💻 Author
 
