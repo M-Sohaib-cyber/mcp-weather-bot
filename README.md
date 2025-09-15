@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" alt="MCP Weather Bot Banner" />
+</p>
+
 # 🌦️ MCP Weather Bot
 
 ![Node.js](https://img.shields.io/badge/Node.js-22.x-green?logo=node.js)
@@ -43,16 +47,16 @@ mcp-weather-bot/
 ## 1) Prerequisites
 - Install **Node.js (LTS)**: [https://nodejs.org](https://nodejs.org)  
 ### Verify installation:
-bash
-```
+
+```bash
   node -v
   npm -v
 ```
 ---
 
 ## 2) Clone the repo
-bash
-```
+
+```bash
 git clone https://github.com/M-Sohaib-cyber/mcp-weather-bot.git
 cd mcp-weather-bot
 ```
@@ -60,20 +64,20 @@ cd mcp-weather-bot
 ## 3) Install dependencies
 
 Option A — Explicitly install required packages:
-bash
-```
+
+```bash
 npm install express node-fetch@2 dotenv
 ```
 
 Option B — If package.json already lists them:
-bash
-```
+
+```bash
 npm install
 ```
 
 (Optional for auto-restart during development):
-bash
-```
+
+```bash
 npm install --save-dev nodemon
 ```
 ## 4) Add your API key
@@ -88,13 +92,13 @@ API_KEY=your_real_api_key_here
 ⚠️ Important: .env is already in .gitignore, so it will not be pushed to GitHub.
 
 ## 5) Start the server
-bash
-```
+
+```bash
 node server.js
 ```
 # or, with nodemon:
-bash
-```
+
+```bash
 npx nodemon server.js
 ```
 ## 6) Test in your browser
@@ -120,8 +124,8 @@ Anyone using this project must generate their own API key.
 📸 Example Output
 
 Current weather
-json
-```
+
+```json
 {
   "location": "London",
   "country": "United Kingdom",
@@ -131,8 +135,8 @@ json
 ```
 
 3-day forecast
-json
-```
+
+```json
 {
   "location": "London",
   "forecast": [
