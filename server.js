@@ -30,3 +30,33 @@ app.get("/weather/:city", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
+
+
+// 3-Day Forecast Route
+app.get("/forecast/:city", async (req, res) => {
+  const city = req.params.city;
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (data.error) {
+      return res.status(404).json({ error: "City not found" });
+    }
+
+    const forecast = data.forecast.forecastday.map(day => ({
+      date: day.date,
+      temperature: day.day.avgtemp_c,
+      condition: day.day.condition.text
+    }));
+
+    res.json({
+      location: data.location.name,
+      forecast: forecast
+    });
+
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch forecast data" });
+  }
+});
