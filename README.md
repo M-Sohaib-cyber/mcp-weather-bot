@@ -31,37 +31,40 @@ mcp-weather-bot/
 
 ## ⚙️ Setup Instructions
 
-### 0) Prerequisites
+### 1) Prerequisites
 - Install **Node.js (LTS)**: [https://nodejs.org](https://nodejs.org)  
 - Verify installation:
 ```
   node -v
   npm -v
 ```
+---
 
-1) Clone the repo
+## 2) Clone the repo
+```
 git clone https://github.com/M-Sohaib-cyber/mcp-weather-bot.git
 cd mcp-weather-bot
+```
 
-2) Install dependencies
+## 3) Install dependencies
 
 Option A — Explicitly install required packages:
-
+```
 npm install express node-fetch@2 dotenv
-
+```
 
 Option B — If package.json already lists them:
-
+```
 npm install
-
+```
 
 (Optional for auto-restart during development):
-
+```
 npm install --save-dev nodemon
-
+```
 3) Add your API key
 
-Sign up at WeatherAPI
+Sign up at WeatherAPI https://www.weatherapi.com/
  (free).
 
 Create a .env file in the project root and add your key:
@@ -71,19 +74,21 @@ API_KEY=your_real_api_key_here
 
 ⚠️ Important: .env is already in .gitignore, so it will not be pushed to GitHub.
 
-4) Start the server
+## 4) Start the server
+```
 node server.js
+```
 # or, with nodemon:
 npx nodemon server.js
 
-5) Test in your browser
+## 5) Test in your browser
 
 Current weather:
 
 http://localhost:3000/weather/London
 
 
-3-day forecast:
+### 3-day forecast:
 
 http://localhost:3000/forecast/London
 
@@ -110,7 +115,7 @@ Current weather
   ]
 }
 
-🔒 Security Notes
+## 🔒 Security Notes
 
 Never commit your .env file (your API key).
 
