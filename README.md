@@ -95,17 +95,17 @@ http://localhost:3000/forecast/London
 📸 Example Output
 
 Current weather
-
+```
 {
   "location": "London",
   "country": "United Kingdom",
   "temperature": 18,
   "condition": "Partly cloudy"
 }
-
+```
 
 3-day forecast
-
+```
 {
   "location": "London",
   "forecast": [
@@ -114,7 +114,7 @@ Current weather
     { "date": "2025-09-17", "temperature": 17, "condition": "Rain" }
   ]
 }
-
+```
 ## 🔒 Security Notes
 
 Never commit your .env file (your API key).
